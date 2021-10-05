@@ -21,7 +21,7 @@ router.post('/create/:id', validateSession, async (req, res) => {
     }
 });
 
-// GET ALL ENTRIES (http://localhost:4000/notes/)
+// GET ALL NOTES (http://localhost:4000/notes/)
 router.get('/', (req, res) => {
     Notes.findAll ()
     .then(notes => res.status(200).json(notes))
@@ -39,7 +39,7 @@ router.get("/mine", validateSession, (req, res) => {
 });
 
 
-//NOtes UPDATE (http://localhost:4000/notes/update/2 (put entry number to update!))
+//Notes UPDATE (http://localhost:4000/notes/update/2 (put entry number to update!))
 
 router.put("/:id", (req, res) => {
     const query = req.params.id;
