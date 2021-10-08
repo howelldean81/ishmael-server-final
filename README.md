@@ -1,4 +1,6 @@
 # ishmael-server-final
+![ishmael-logo](https://github.com/howelldean81/ishmael-server-final/blob/main/assets/ishmael.png)
+
 
 ## Dependencies
 Ishmael requires the following libraries to run:
